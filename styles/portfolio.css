@@ -17,7 +17,8 @@ h2 {
 
 .hero,
 .work-page,
-.about-page {
+.about-page,
+.contact-page {
   margin: 120px 100px;
 }
 .hero p {
@@ -68,7 +69,8 @@ p {
   padding: 0 60px;
   border-radius: 4px;
 }
-.footer-container a {
+.footer-container a,
+.contact-page a {
   text-decoration: none;
   color: #000000;
   font-size: 36px;
@@ -78,7 +80,7 @@ footer p {
   font-size: 36px;
 }
 .icon {
-  font-size: 24px;
+  font-size: 36px;
   color: #e4e2e8;
 }
 
@@ -90,4 +92,12 @@ hr {
 }
 .description p {
   font-size: 18px;
+}
+
+.contact-page h1 {
+  font-size: 96px;
+}
+.contact-page h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 24px;
 }
