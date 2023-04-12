@@ -24,10 +24,10 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg nav-bar">
+    <nav class="navbar navbar-expand-lg nav-bar fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="images/aj-img.jpg" class="logo" alt=""
+        <a class="navbar-brand" href="/" title="Homepage"
+          ><img src="images/aj-img.jpg" class="logo" alt="Andrea photo"
         /></a>
         <button
           class="navbar-toggler"
@@ -43,16 +43,26 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/index.html"
+                title="Homepage"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="/work.html" title="My projects">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link active" href="/about.html" title="About me"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="/contact.html" title="Contact me"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -80,15 +90,25 @@
         </div>
       </div>
     </div>
-    <footer class="m-5">
+    <footer class="m-3">
       <div class="container footer-container d-flex justify-content-between">
         <div class="m-5 me-0"><p>Let's work together 👉</p></div>
         <div class="m-5 ms-0">
-          <a href="mailto:ajovicic019@gmail.com">ajovicic019@gmail.com</a>
+          <a
+            href="mailto:ajovicic019@gmail.com"
+            title="Email address Andrea Jovicic"
+            >ajovicic019@gmail.com</a
+          >
         </div>
       </div>
       <div class="icon d-flex justify-content-center mt-5 mb-3">
-        <i class="fa-brands fa-linkedin"></i>
+        <a
+          href="https://www.linkedin.com/in/andrea-jovicic-880b3b24a/"
+          target="_blank"
+          title="Linedin profile Andrea Jovicic"
+        >
+          <i class="fa-brands fa-linkedin"> </i>
+        </a>
       </div>
     </footer>
     <script

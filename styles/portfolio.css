@@ -79,9 +79,18 @@ p {
 footer p {
   font-size: 36px;
 }
-.icon {
-  font-size: 36px;
+.icon a {
+  font-size: 24px;
   color: #e4e2e8;
+  border-radius: 50%;
+  background-color: #e8b3c1;
+  border: 1px solid #e4e2e8;
+  padding: 10px 20px;
+  transition: all 200ms ease-in-out;
+}
+.icon a:hover {
+  color: #e8b3c1;
+  background-color: #e4e2e8;
 }
 
 hr {
