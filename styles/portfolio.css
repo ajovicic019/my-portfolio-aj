@@ -1,0 +1,70 @@
+body {
+  background-color: #e8b3c1;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Caveat", cursive;
+}
+.hero {
+  margin: 120px 100px;
+  border-radius: 8px;
+}
+.hero p {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 36px;
+  padding: 20px 0 0;
+}
+p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 36px;
+}
+.size {
+  max-width: 400px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px #000000;
+}
+.hero h1 {
+  font-size: 96px;
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+}
+.hero h2 {
+  font-size: 24px;
+  font-family: "Roboto Mono", monospace;
+}
+.btn-branding {
+  background-color: #e4e2e8;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 36px;
+}
+.logo {
+  max-width: 60px;
+}
+.nav-bar {
+  background-color: #e8b3c1;
+}
+.footer-container {
+  background-color: #e4e2e8;
+  padding: 0 60px;
+  border-radius: 4px;
+}
+.footer-container a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 36px;
+  font-family: "Caveat", cursive;
+}
+.icon {
+  font-size: 24px;
+  color: #e4e2e8;
+}
+
+hr {
+  border-top: 3px solid #e4e2e8;
+}
