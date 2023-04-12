@@ -6,10 +6,19 @@ h2,
 h3,
 h4 {
   font-family: "Caveat", cursive;
+  text-align: center;
 }
-.hero {
+h2 {
+  font-size: 42px;
+}
+.work-page h1 {
+  font-family: "Roboto Mono", monospace;
+}
+
+.hero,
+.work-page,
+.about-page {
   margin: 120px 100px;
-  border-radius: 8px;
 }
 .hero p {
   text-align: center;
@@ -19,6 +28,10 @@ h4 {
 }
 p {
   font-family: "Roboto Mono", monospace;
+
+  text-align: center;
+}
+.showcase {
   font-size: 36px;
 }
 .size {
@@ -45,6 +58,7 @@ p {
 }
 .logo {
   max-width: 60px;
+  border-radius: 50%;
 }
 .nav-bar {
   background-color: #e8b3c1;
@@ -60,6 +74,9 @@ p {
   font-size: 36px;
   font-family: "Caveat", cursive;
 }
+footer p {
+  font-size: 36px;
+}
 .icon {
   font-size: 24px;
   color: #e4e2e8;
@@ -67,4 +84,10 @@ p {
 
 hr {
   border-top: 3px solid #e4e2e8;
+}
+.description {
+  padding: 60px;
+}
+.description p {
+  font-size: 18px;
 }
