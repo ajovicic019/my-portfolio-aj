@@ -66,24 +66,24 @@
         </div>
       </div>
     </nav>
-    <hr />
+
     <div class="hero">
-      <p class="mb-5 text-muted">Welcome to my portfolio</p>
+      <p class="mb-5 text-muted d-none d-md-block">Welcome to my portfolio</p>
       <div class="container">
         <div class="row">
-          <div class="col-6">
-            <h1 class="ms-5 mt-5">Andrea Jovicic</h1>
-            <h2 class="ms-5 mt-3">Front-end developer, based in Serbia</h2>
+          <div class="col-lg-6">
+            <h1>Andrea Jovicic</h1>
+            <h2>Front-end developer, based in Serbia</h2>
             <div class="d-flex justify-content-center">
               <a
                 href="/contact.html"
-                class="btn btn-branding ms-5 mt-5"
+                class="btn btn-branding m-5"
                 title="Contact Andrea"
                 >Contact me</a
               >
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 d-none d-md-block">
             <img
               src="images/me-img.jpg"
               class="fluid size ms-5 mb-5"
@@ -95,35 +95,85 @@
     </div>
     <hr />
     <div class="container">
-      <p class="mb-5 showcase">My projects</p>
+      <p class="mb-5 showcase text-muted">My projects</p>
       <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6">
           <h2 class="mt-2">Red Wine Project</h2>
           <p class="text-muted">Built with HTML and CSS</p>
-          <img src="images/aj-red-wine.png" class="fluid" alt="" />
+          <img
+            src="images/aj-red-wine.png"
+            class="fluid d-none d-lg-block"
+            alt=""
+          />
+          <div class="d-flex justify-content-center">
+            <a
+              href="/work.html#red-wine"
+              class="btn btn-branding mb-5"
+              title="Red Wine project"
+              >Learn more</a
+            >
+          </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6">
           <h2 class="mt-2">Book Club Project</h2>
           <p class="text-muted">Built with HTML, CSS and JavaScript</p>
-          <img src="images/aj-book-club.png" class="fluid" alt="" />
+          <img
+            src="images/aj-book-club.png"
+            class="fluid d-none d-md-block"
+            alt=""
+          />
+          <div class="d-flex justify-content-center">
+            <a
+              href="/work.html#book-club"
+              class="btn btn-branding mb-5"
+              title="Book Club project"
+              >Learn more</a
+            >
+          </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6">
             <h2 class="mt-2">Weather Project</h2>
             <p class="text-muted">Built with HTML, CSS and JavaScript</p>
 
-            <img src="images/aj-weather-app.png" class="fluid" alt="" />
+            <img
+              src="images/aj-weather-app.png"
+              class="fluid d-none d-md-block"
+              alt=""
+            />
+            <div class="d-flex justify-content-center">
+              <a
+                href="/work.html#weather"
+                class="btn btn-branding mb-5"
+                title="Weather project"
+                >Learn more</a
+              >
+            </div>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6">
             <h2 class="mt-2">World Clock Project</h2>
             <p class="text-muted">Built with HTML, CSS and JavaScript</p>
-            <img src="images/aj-world-clock.png" class="fluid" alt="" />
+            <img
+              src="images/aj-world-clock.png"
+              class="fluid d-none d-md-block"
+              alt=""
+            />
+            <div class="d-flex justify-content-center">
+              <a
+                href="/work.html#world-clock"
+                class="btn btn-branding mb-5"
+                title="World Clock project"
+                >Learn more</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
     <footer class="m-3">
-      <div class="container footer-container d-flex justify-content-between">
+      <div
+        class="container footer-container d-flex justify-content-between d-none d-md-flex"
+      >
         <div class="m-5 me-0"><p>Let's work together 👉</p></div>
         <div class="m-5 ms-0">
           <a
@@ -140,6 +190,13 @@
           title="Linedin profile Andrea Jovicic"
         >
           <i class="fa-brands fa-linkedin"> </i>
+        </a>
+        <a
+          href="mailto:ajovicic019@gmail.com"
+          target="_blank"
+          title="Email Andrea Jovicic"
+        >
+          <i class="fa-regular fa-envelope"></i>
         </a>
       </div>
     </footer>

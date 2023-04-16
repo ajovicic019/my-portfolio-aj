@@ -13,13 +13,17 @@ h2 {
 }
 .work-page h1 {
   font-family: "Roboto Mono", monospace;
+  font-size: 72px;
+}
+.work-page h2 {
+  font-weight: bold;
 }
 
 .hero,
 .work-page,
 .about-page,
 .contact-page {
-  margin: 120px 100px;
+  padding: 90px 60px;
 }
 .hero p {
   text-align: center;
@@ -41,13 +45,24 @@ p {
   box-shadow: 1px 1px 5px #000000;
 }
 .hero h1 {
+  margin: 20px 0 0 20px;
+}
+.hero h1,
+.about-page h1 {
   font-size: 96px;
   font-family: "Caveat", cursive;
   font-weight: bold;
 }
+.about-page img {
+  max-width: 600px;
+}
+.about-page p {
+  line-height: 1.5;
+}
 .hero h2 {
   font-size: 24px;
   font-family: "Roboto Mono", monospace;
+  margin: 20px 0 0 20px;
 }
 .btn-branding {
   background-color: #e4e2e8;
@@ -62,7 +77,7 @@ p {
   border-radius: 50%;
 }
 .nav-bar {
-  background-color: #e8b3c1;
+  background-color: #e4e2e8;
 }
 .footer-container {
   background-color: #e4e2e8;
@@ -80,6 +95,7 @@ footer p {
   font-size: 36px;
 }
 .icon a {
+  margin: 0 20px 0 20px;
   font-size: 24px;
   color: #e4e2e8;
   border-radius: 50%;
@@ -101,6 +117,10 @@ hr {
 }
 .description p {
   font-size: 18px;
+  margin: 30px;
+}
+.description h2 {
+  margin: 30px;
 }
 
 .contact-page h1 {
@@ -109,4 +129,52 @@ hr {
 .contact-page h2 {
   font-family: "Roboto Mono", monospace;
   font-size: 24px;
+}
+@media (max-width: 960px) {
+  .hero,
+  .work-page,
+  .about-page {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .hero h1,
+  .hero h2 {
+    margin: 20px 0 0 0;
+  }
+
+  h1 {
+    line-height: 1.1;
+  }
+  h2 {
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  .showcase {
+    font-size: 24px;
+  }
+  .description {
+    padding: 30px;
+  }
+
+  .description h2,
+  .description p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .work-page h1 {
+    font-size: 36px;
+  }
+  .about-page h1,
+  .contact-page h1 {
+    font-size: 46px;
+  }
+  .about-page img {
+    max-width: 250px;
+  }
+  .contact-page h2 {
+    font-size: 18px;
+  }
+  .work-page a {
+    margin: 25px 0 0 0;
+  }
 }
