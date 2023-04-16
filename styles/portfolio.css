@@ -1,22 +1,28 @@
-body {
-  background-color: #e8b3c1;
+:root {
+  --branding-color: #eedfdf;
+  --heading-font-family: "Caveat", cursive;
+  --text-font-family: "Roboto Mono", monospace;
 }
+
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Caveat", cursive;
+  font-family: var(--heading-font-family);
   text-align: center;
 }
-h2 {
-  font-size: 42px;
-}
-.work-page h1 {
-  font-family: "Roboto Mono", monospace;
-  font-size: 72px;
-}
-.work-page h2 {
+h1 {
+  font-size: 96px;
+  font-family: var(--heading-font-family);
   font-weight: bold;
+}
+h3 {
+  font-size: 36px;
+  font-family: var(--text-font-family);
+}
+p {
+  font-family: var(--text-font-family);
+  text-align: center;
 }
 
 .hero,
@@ -25,62 +31,73 @@ h2 {
 .contact-page {
   padding: 90px 60px;
 }
+.hero h1 {
+  margin: 20px 0 0 20px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  font-family: var(--text-font-family);
+  margin: 20px 0 0 20px;
+}
 .hero p {
   text-align: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--text-font-family);
   font-size: 36px;
   padding: 20px 0 0;
 }
-p {
-  font-family: "Roboto Mono", monospace;
 
-  text-align: center;
+.work-page h1 {
+  font-family: var(--text-font-family);
+  font-size: 52px;
 }
-.showcase {
-  font-size: 36px;
+
+.work-page h2 {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 30px;
 }
-.size {
+.work-page p {
+  font-size: 18px;
+  margin: 30px;
+}
+.description {
+  padding: 60px;
+}
+
+.img-size,
+.about-page img {
   max-width: 400px;
   border-radius: 50%;
   box-shadow: 1px 1px 5px #000000;
 }
-.hero h1 {
-  margin: 20px 0 0 20px;
-}
-.hero h1,
-.about-page h1 {
-  font-size: 96px;
-  font-family: "Caveat", cursive;
-  font-weight: bold;
-}
+
 .about-page img {
   max-width: 600px;
 }
 .about-page p {
   line-height: 1.5;
 }
-.hero h2 {
-  font-size: 24px;
-  font-family: "Roboto Mono", monospace;
-  margin: 20px 0 0 20px;
-}
+
 .btn-branding {
-  background-color: #e4e2e8;
-  font-family: "Roboto Mono", monospace;
+  background-color: var(--branding-color);
+  font-family: var(--text-font-family);
   font-weight: bold;
   font-size: 18px;
   padding: 15px 20px;
   border-radius: 36px;
+  transition: all 200ms ease-in-out;
 }
+
 .logo {
   max-width: 60px;
   border-radius: 50%;
 }
 .nav-bar {
-  background-color: #e4e2e8;
+  background-color: var(--branding-color);
 }
 .footer-container {
-  background-color: #e4e2e8;
+  border: 2px solid var(--branding-color);
   padding: 0 60px;
   border-radius: 4px;
 }
@@ -89,7 +106,7 @@ p {
   text-decoration: none;
   color: #000000;
   font-size: 36px;
-  font-family: "Caveat", cursive;
+  font-family: var(--heading-font-family);
 }
 footer p {
   font-size: 36px;
@@ -97,40 +114,45 @@ footer p {
 .icon a {
   margin: 0 20px 0 20px;
   font-size: 24px;
-  color: #e4e2e8;
+  color: white;
+  background-color: var(--branding-color);
   border-radius: 50%;
-  background-color: #e8b3c1;
-  border: 1px solid #e4e2e8;
+  border: 1px solid var(--branding-color);
   padding: 10px 20px;
   transition: all 200ms ease-in-out;
 }
 .icon a:hover {
-  color: #e8b3c1;
-  background-color: #e4e2e8;
+  color: var(--branding-color);
+  background-color: white;
 }
 
 hr {
-  border-top: 3px solid #e4e2e8;
-}
-.description {
-  padding: 60px;
-}
-.description p {
-  font-size: 18px;
-  margin: 30px;
-}
-.description h2 {
-  margin: 30px;
+  border-top: 3px solid var(--branding-color);
 }
 
-.contact-page h1 {
-  font-size: 96px;
-}
 .contact-page h2 {
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--text-font-family);
   font-size: 24px;
 }
+.code-source {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-family: var(--text-font-family);
+  transition: all 200ms ease-in-out;
+}
+.code-source:hover {
+  text-decoration: underline;
+}
 @media (max-width: 960px) {
+  h1 {
+    line-height: 1.1;
+  }
+  h2 {
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 36px;
+  }
   .hero,
   .work-page,
   .about-page {
@@ -142,39 +164,34 @@ hr {
     margin: 20px 0 0 0;
   }
 
-  h1 {
-    line-height: 1.1;
-  }
-  h2 {
-    font-weight: bold;
-    line-height: 1.5;
-  }
   .showcase {
     font-size: 24px;
   }
   .description {
     padding: 30px;
   }
-
-  .description h2,
-  .description p {
-    margin: 0;
-    line-height: 1.5;
-  }
   .work-page h1 {
     font-size: 36px;
   }
+
+  .work-page h2,
+  .work-page p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .work-page a {
+    margin: 25px 0 0 0;
+  }
+
   .about-page h1,
   .contact-page h1 {
     font-size: 46px;
+    line-height: 1.5;
   }
   .about-page img {
     max-width: 250px;
   }
   .contact-page h2 {
     font-size: 18px;
-  }
-  .work-page a {
-    margin: 25px 0 0 0;
   }
 }
