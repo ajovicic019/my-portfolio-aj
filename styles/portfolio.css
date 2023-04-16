@@ -95,6 +95,8 @@ p {
 }
 .nav-bar {
   background-color: var(--branding-color);
+  font-family: var(--text-font-family);
+  font-size: 18px;
 }
 .footer-container {
   border: 2px solid var(--branding-color);
@@ -105,8 +107,12 @@ p {
 .contact-page a {
   text-decoration: none;
   color: #000000;
-  font-size: 36px;
+  font-size: 56px;
   font-family: var(--heading-font-family);
+}
+.footer-container a:hover,
+.contact-page a:hover {
+  text-decoration: underline;
 }
 footer p {
   font-size: 36px;
@@ -184,6 +190,10 @@ hr {
   .contact-page h1 {
     font-size: 46px;
     line-height: 1.5;
+  }
+  .footer-container a,
+  .contact-page a {
+    font-size: 36px;
   }
   .about-page img {
     max-width: 250px;
