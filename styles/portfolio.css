@@ -72,8 +72,6 @@ p {
 .img-size,
 .about-page img {
   max-width: 400px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 5px #000000;
 }
 
 .about-page img {
@@ -95,7 +93,7 @@ p {
 }
 
 .logo {
-  max-width: 60px;
+  max-width: 40px;
   border-radius: 50%;
 }
 .nav-bar {
