@@ -46,6 +46,10 @@ p {
   font-size: 36px;
   padding: 20px 0 0;
 }
+.dictionary img {
+  display: block;
+  margin: 0 auto;
+}
 
 .work-page h1 {
   font-family: var(--text-font-family);
